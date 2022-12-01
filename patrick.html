@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Review</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body style="background-color: #242A32;">
+    <script>
+        function navToGerry() {
+            window.location.replace("http://localhost:5500/")
+        }
+        function navToIsaac() {
+            window.location.replace("http://localhost:5500/isaac.html")
+        }
+        function starClick(star) {
+            document.getElementById(star).style.color = "yellow"
+
+        }
+        function sendStar() {
+            function createReview(reviewval) {
+                let textfield = document.getElementById("textinput").value
+                let ul = document.getElementById("list")
+                let li = document.createElement("li")
+
+                valstar = "★"
+                li.innerHTML = "<div style='color:yellow'>" + valstar.repeat(reviewval) + "<br/>" + "<p>" + textfield + "</p>" + "</div>"
+
+                ul.appendChild(li)
+                document.getElementById("star5").style.color = "gray"
+                document.getElementById("star4").style.color = "gray"
+                document.getElementById("star3").style.color = "gray"
+                document.getElementById("star2").style.color = "gray"
+                document.getElementById("star1").style.color = "gray"
+                document.getElementById("textinput").value = ""
+
+
+            }
+            star5color = document.getElementById("star5").style.color
+            star4color = document.getElementById("star4").style.color
+            star3color = document.getElementById("star3").style.color
+            star2color = document.getElementById("star2").style.color
+            star1color = document.getElementById("star1").style.color
+            if (star5color === "yellow") {
+
+                createReview(5)
+            }
+            else if (star4color === "yellow") {
+                createReview(4)
+            }
+            else if (star3color === "yellow") {
+                createReview(3)
+            }
+            else if (star2color === "yellow") {
+                createReview(2)
+            }
+            else if (star1color === "yellow") {
+                createReview(1)
+            }
+            else {
+                alert("please click a star")
+            }
+        }
+    </script>
+    <style type="text/css">
+        .myDiv1 {
+            text-align: center;
+            font-family: sans-serif;
+        }
+
+
+        .myDiv1 img {
+            width: 50%;
+            margin-top: 40px;
+        }
+
+        @media screen and (min-width: 800px) {
+            .myDiv1 img {
+                width: 100%;
+            }
+        }
+
+        .myDiv2 {
+            text-align: center;
+            font-family: sans-serif;
+            padding: 10px;
+        }
+
+        .stars {
+            text-align: center;
+
+        }
+
+        .stars button {
+            text-align: center;
+            font-size: 40px;
+            padding: 10px;
+            outline: none;
+            background-color: transparent;
+            border: none;
+            color: gray
+        }
+
+        .backbutton {
+            color: white;
+            position: absolute;
+            font-size: 60px;
+            margin-top: -20px;
+            margin-left: 20px
+        }
+
+        .addwatch {
+
+            color: white;
+            position: absolute;
+            font-size: 60px;
+            margin-top: -20px;
+            margin-right: 20px;
+            right: 0px;
+        }
+
+
+        ul {
+            list-style-type: none;
+        }
+
+        ul li div {
+            font-size: 40px;
+            background-color: gray;
+            padding: 10px;
+            border-radius: 20px;
+            width: 80%;
+        }
+
+        ul li div p {
+            font-size: 40px;
+            color: white;
+            padding: 10px;
+            border-radius: 20px;
+            text-align: left;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        .title {
+            color: white;
+            font-weight: bold;
+            font-size: 40px;
+            margin-top: 40px;
+        }
+    </style>
+    <div class="myDiv1">
+
+        <div class="backbutton" onclick="navToGerry()">⬅</div>
+        <div class="addwatch" onclick="navToIsaac()">🏳️</div>
+        <div class="title">Review</div>
+        <img
+            src="https://wwwflickeringmythc3c8f7.zapwp.com/q:i/r:0/wp:1/w:600/u:https://cdn.flickeringmyth.com/wp-content/uploads/2021/11/SPider-Man-No-Way-Home-UK-posters-1-600x450.jpg"><img>
+    </div>
+    <div>
+        <h1 class="myDiv2" style="color: white; font-size: 60px;">Spiderman No Way Home</h1>
+    </div>
+    <div>
+        <p class="myDiv2" style="color: white; font-size: 40px; opacity: 60%;">2021 <span
+                style="padding-right:15px; padding-left:15px;">|</span>
+            148 mins
+            <span style="padding-right:15px; padding-left:15px;">|</span> Action
+        </p>
+    </div>
+    <div>
+        <p class="myDiv2" style="color: white; font-size:40px">Reviews</p>
+    </div>
+    <center>
+        <textarea type="text" id="textinput"
+            style="background-color: gray; outline:none; border:none; width:500px; height:80px; color:white; font-size: 20px; "></textarea>
+    </center>
+    <div class="stars">
+        <button type="button" id="star1" onclick="starClick('star1')">★</button>
+        <button type="button" id="star2" onclick="starClick('star2')">★</button>
+        <button type="button" id="star3" onclick="starClick('star3')">★</button>
+        <button type="button" id="star4" onclick="starClick('star4')">★</button>
+        <button type="button" id="star5" onclick="starClick('star5')">★</button>
+    </div>
+    <center>
+        <button onclick="sendStar()"
+            style="background-color: rgba(255, 255, 255, 0.4); color: rgb(11, 11, 11); font-weight: bold; font-size: 20px; border-radius: 10px; padding: 5px;">Submit
+            Review</button>
+    </center>
+    <center>
+        <ul id="list">
+
+        </ul>
+    </center>
+</body>
+
+</html>

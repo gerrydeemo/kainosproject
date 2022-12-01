@@ -1,0 +1,74 @@
+html {
+    background-color: #242A32;
+}
+
+.title {
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+
+.searchbar input {
+    width: 90%;
+    margin-left: 10px;
+    height: 50px;
+    padding-left: 20px;
+    background-color: #2d3339;
+    outline: none;
+    border: none;
+    color: white;
+    opacity: 70%;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.movie-rankings {
+    background-color: #242A32;
+    overflow: auto;
+    white-space: nowrap;
+    display: flex;
+}
+
+.movie {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.movie-number {
+    display: absolute;
+    margin-top: -90px;
+    margin-left: -20px;
+    font-family: sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(28, 163, 236);
+}
+
+.catagories {
+    background-color: #242A32;
+    overflow: auto;
+    white-space: nowrap;
+    display: flex;
+}
+
+.catagories div {
+    padding: 40px;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+
+}
+
+.movie-grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+}

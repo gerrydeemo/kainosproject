@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <script>
+
+        function moveToPatrick() {
+            window.location.replace("http://localhost:5500/patrick.html")
+        }
+        function checkSearch() {
+            search = document.getElementById("searchinput").value
+            movies = document.getElementById("movie-section")
+            if (search === "") {
+                movies.style.display = 'block'
+            }
+            else if (search === "spiderman") {
+                movies.style.display = "block"
+            }
+            else if (search === "s") {
+                movies.style.display = "block"
+            }
+            else if (search === "sp") {
+                movies.style.display = "block"
+            }
+            else if (search === "spi") {
+                movies.style.display = "block"
+            }
+            else if (search === "spid") {
+                movies.style.display = "block"
+            }
+            else if (search === "spid") {
+                movies.style.display = "block"
+            }
+            else if (search === "spide") {
+                movies.style.display = "block"
+            }
+            else if (search === "spider") {
+                movies.style.display = "block"
+            }
+            else if (search === "spiderm") {
+                movies.style.display = "block"
+            }
+            else if (search === "spiderma") {
+                movies.style.display = "block"
+            }
+
+            else {
+                movies.style.display = "none"
+            }
+        }
+    </script>
+    <div class="title">
+        What do you want to watch?
+    </div>
+    <div class="searchbar">
+        <input type="text" name="search" onchange onpropertychange onkeyuponpaste oninput="checkSearch()"
+            id="searchinput" class="search" placeholder="Search">
+    </div>
+    <div class="movie-section" id="movie-section">
+        <div class="movie-rankings">
+            <div class="movie" onclick="moveToPatrick()">
+                <div class="movie-image"><img src="./spider.jpeg" alt=""></div>
+                <div class="movie-number">1</div>
+            </div>
+            <div class="movie" onclick="moveToPatrick()">
+                <div class="movie-image"><img src="./spider.jpeg" alt=""></div>
+                <div class="movie-number">2</div>
+            </div>
+            <div class="movie" onclick="moveToPatrick()">
+                <div class="movie-image"><img src="./spider.jpeg" alt=""></div>
+                <div class="movie-number">3</div>
+            </div>
+            <div class="movie" onclick="moveToPatrick()">
+                <div class="movie-image"><img src="./spider.jpeg" alt=""></div>
+                <div class="movie-number">4</div>
+            </div>
+            <div class="movie" onclick="moveToPatrick()">
+                <div class="movie-image"><img src="./spider.jpeg" alt=""></div>
+                <div class="movie-number">5</div>
+            </div>
+            <div class="movie" onclick="moveToPatrick()">
+                <div class="movie-image"><img src="./spider.jpeg" alt=""></div>
+                <div class="movie-number">6</div>
+            </div>
+            <div class="movie" onclick="moveToPatrick()">
+                <div class="movie-image"><img src="./spider.jpeg" alt=""></div>
+                <div class="movie-number">7</div>
+            </div>
+            <div class="movie" onclick="moveToPatrick()">
+                <div class="movie-image"><img src="./spider.jpeg" alt=""></div>
+                <div class="movie-number">8</div>
+            </div>
+        </div>
+        <div class="all-movies">
+            <div class="catagories">
+                <div>New To Theaters</div>
+                <div>Top Rated</div>
+                <div>Upcoming</div>
+                <div>Popular</div>
+            </div>
+            <div class="movie-grid">
+                <div class="movie-image"><img src="./spider.jpeg" alt=""></div>
+                <div class="movie-image"><img src="./spider.jpeg" alt=""></div>
+                <div class="movie-image"><img src="./spider.jpeg" alt=""></div>
+                <div class="movie-image"><img src="./spider.jpeg" alt=""></div>
+                <div class="movie-image"><img src="./spider.jpeg" alt=""></div>
+                <div class="movie-image"><img src="./spider.jpeg" alt=""></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

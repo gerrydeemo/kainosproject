@@ -1,0 +1,77 @@
+.filmslist {
+    display: block;
+    background-color: #242A32;
+}
+
+html {
+    background-color: #242A32;
+}
+
+section {
+    margin-top: 80px;
+}
+
+img {
+    border-radius: 10%;
+    width: 100%;
+    height: auto;
+
+}
+
+.imagecontainer {
+    width: 50%;
+}
+
+.backbutton {
+    color: white;
+    position: absolute;
+    font-size: 60px;
+    margin-top: -20px;
+    margin-left: 20px
+}
+
+.info {
+    display: inline-block;
+    margin-left: 0px;
+}
+
+.info-container {
+    display: inline-block;
+
+
+}
+
+* {
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: light;
+}
+
+section {
+    display: block;
+    padding-left: 50px;
+}
+
+.spiderman {
+    display: flex;
+    width: 100%;
+
+}
+
+li,
+h2,
+i {
+    color: white;
+}
+
+.star {
+    color: goldenrod;
+}
+
+h2 {
+    font-weight: none;
+}
+
+li {
+    list-style: none;
+}
